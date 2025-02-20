@@ -1,0 +1,25 @@
+Setting up Django in Ubuntu
+1. Create a virtualenv: python3 -m venv venv
+2. Start the virtualenv: source venv/bin/activate
+3. Start a django project: django-admin startproject ProjectName
+4. Create a django app: django-admin startapp Appname
+5. Run the server: python manage.py runserver
+
+-----------------------------
+Connect MySql with django
+1. pip install pymyql
+2. Add this to your django __init__.py:- 
+   import pymysql
+   pymysql.install_as_MySQLdb()
+3. Configure settings.py:-
+   DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'your_database_name',
+        'USER': 'your_mysql_user',
+        'PASSWORD': 'your_mysql_password',
+        'HOST': 'localhost',  # Change if using a remote database
+        'PORT': '3306',  # Default MySQL port
+    }
+}
+4. Apply Migrations
