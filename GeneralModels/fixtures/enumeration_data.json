@@ -1,0 +1,59 @@
+[
+    {
+        "model": "GeneralModels.EnumerationType",
+        "pk": "MARITAL_STATUS",
+        "fields": {
+            "description": "Marital Status"
+        }
+    },
+    {
+        "model": "GeneralModels.Enumeration",
+        "pk": "DIVORCED",
+        "fields": {
+            "enumTypeId": "MARITAL_STATUS",
+            "enumCode": null,
+            "sequenceId": "04",
+            "description": "Divorced"
+        }
+    },
+    {
+        "model": "GeneralModels.Enumeration",
+        "pk": "MARRIED",
+        "fields": {
+            "enumTypeId": "MARITAL_STATUS",
+            "enumCode": null,
+            "sequenceId": "02",
+            "description": "Married"
+        }
+    },
+    {
+        "model": "GeneralModels.Enumeration",
+        "pk": "SEPARATED",
+        "fields": {
+            "enumTypeId": "MARITAL_STATUS",
+            "enumCode": null,
+            "sequenceId": "03",
+            "description": "Separated"
+        }
+    },
+    {
+        "model": "GeneralModels.Enumeration",
+        "pk": "SINGLE",
+        "fields": {
+            "enumTypeId": "MARITAL_STATUS",
+            "enumCode": null,
+            "sequenceId": "01",
+            "description": "Single"
+        }
+    },
+    {
+        "model": "GeneralModels.Enumeration",
+        "pk": "WIDOWED",
+        "fields": {
+            "enumTypeId": "MARITAL_STATUS",
+            "enumCode": null,
+            "sequenceId": "05",
+            "description": "Widowed"
+        }
+    }
+]
